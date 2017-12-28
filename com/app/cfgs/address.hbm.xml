@@ -1,0 +1,16 @@
+ <!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.app.model.Address" table="Address_MTM">
+		<id name="addrId" > <!-- Singular Identifier Cfg -->
+		</id>
+		<property name="location"/>
+		
+		<set name="emps" table="EMP_ADDR" cascade="all"  lazy="extra">
+		   <key column="AddressID"/>
+		   <many-to-many class="com.app.model.Employee" column="EmployeeID"/>
+		</set>
+	</class>
+</hibernate-mapping>
