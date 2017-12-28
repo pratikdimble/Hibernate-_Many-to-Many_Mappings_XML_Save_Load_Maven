@@ -1,0 +1,2 @@
+# Hibernate-_Many-to-Many_Mappings_Save_Load
+A Many-to-Many mapping can be implemented using a Set java collection that does not contain any duplicate element. We already have seen how to map Set collection in hibernate, so if you already learned Set mapping, then you are all set to go with manyto-many mapping.  A Set is mapped with a &lt;set> element in the mapping table and initialized with java.util.HashSet. You can use Set collection in your class when there is no duplicate element required in the collection.
