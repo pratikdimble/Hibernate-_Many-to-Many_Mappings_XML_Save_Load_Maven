@@ -25,7 +25,7 @@ public class TestApp_ManyToMany_Save {
 				Employee emp3=new Employee();
 				emp1.setEmpId(1001);emp1.setEmpName("Pratik");
 				emp2.setEmpId(1002);emp2.setEmpName("Rohit");
-				emp2.setEmpId(1003);emp3.setEmpName("Shubham");
+				emp3.setEmpId(1003);emp3.setEmpName("Shubham");
 				
 				Address addr1=new Address();
 				Address addr2=new Address();
